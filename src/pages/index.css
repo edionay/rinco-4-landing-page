@@ -45,6 +45,16 @@ nav {
 
 .cards {
     display: flex;
+    position: relative;
+}
+
+.desktop-arrow {
+    position: absolute; 
+    top: -8rem;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .card {
@@ -61,13 +71,14 @@ nav {
     font-weight: lighter;
 }
 
-.tutorial {
+.desktop-tutorial {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
     border-radius: 40px;
-    height: inherit;}
+    height: inherit;
+}
 
 .title-section {
     display: flex;
@@ -89,8 +100,6 @@ nav {
     color: white;
     font-weight: lighter;
 }
-
-
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -98,18 +107,69 @@ nav {
     margin-right: auto;
     margin-left: auto;
 }
+
+
+.mobile-simple-title, .mobile-tutorial, .play-store-mobile {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .container {
       width: 750px;
     }
+
 }
   @media (min-width: 992px) {
     .container {
       width: 970px;
     }
+
 }
-  @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .container {
       width: 1170px;
+    }
+}
+
+@media (orientation: portrait) {
+
+    nav {
+        display: none;
+    }
+
+    br {
+        display: none;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+
+    .simple-title {
+        display: none;
+    }
+
+    .desktop-tutorial {
+        display: none;
+    }
+    .mobile-tutorial {
+        background-color: white;
+        border-radius: 30px;
+        padding: 1rem;
+        text-align: left;
+        color: #50B9E3;
+        display: block;
+
+    }
+
+    .play-store-mobile {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .mobile-simple-title {
+        display: block;
+        color: white;
+        margin: 1rem;
     }
 }

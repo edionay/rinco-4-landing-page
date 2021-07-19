@@ -31,27 +31,36 @@ const IndexPage = () => {
           Rinco 4
         </div>
         <div className="subtitle">
-          Converta links do Spotify e Deezer<br />
+          Converta links do Spotify e Deezer <br />
           para o YouTube!
         </div>
       </section>
 
-      <section className="tutorial">
+      <section className="desktop-tutorial">
         <div>
           <div className="simple-title">Simples assim:</div>
         </div>
-
-        <div>
-          <div>
-            <img width={150} src={arrow}></img>
-          </div>
           <div className="cards">
+            <img className="desktop-arrow" width={150} src={arrow}></img>
             <div className="card">Compartilhe um link no Rinco 4</div>
             <div className="card">Ouça no YouTube</div>
           </div>
-        </div>
-      </section>
 
+      </section>
+      <section className="mobile-tutorial">
+        <ol>
+          <li>
+            Compartilhe um link com o Rinco 4
+          </li>
+          <li>
+            Abra no Youtube
+          </li>
+        </ol>
+      </section>
+      <div className="mobile-simple-title">Simples assim!</div>
+      <section className="play-store-mobile">
+        <img width={150} src={playStoreBadge}></img>
+      </section>
     </main>
   )
 }
