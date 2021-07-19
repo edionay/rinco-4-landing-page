@@ -1,0 +1,115 @@
+main {
+    text-align: center;
+    background-color: #50B9E3;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: inherit;
+    color: white;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-weight: bold;
+    color: #50B9E3;
+    -webkit-text-stroke: 0.5px white;
+    font-size: 1.5rem;
+}
+
+.play-store-section {
+    display: flex;
+}
+
+.download-title {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.simple-title {
+    font-size: 1.5em;
+    color: #50B9E3;
+    padding: 1em;
+    font-weight: 500;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    align-items: center;
+    background: #50B9E3;
+    font-size: 1.5em;
+    padding: 1em;
+    width: 10em;
+    border-radius: 40px;
+    color: white;
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+.tutorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    height: inherit;}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: center;
+}
+
+.title {
+    font-size: 5em;
+    font-weight: bold;
+    color: #50B9E3;
+    margin-bottom: 0.2em;
+    -webkit-text-stroke: 1px white;
+}
+
+.subtitle {
+    font-size: 2em;
+    color: white;
+    font-weight: lighter;
+}
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}

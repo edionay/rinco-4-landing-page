@@ -17,5 +17,14 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `montserrat\:300,400,500,600,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    }
   ],
 };
